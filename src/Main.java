@@ -9,13 +9,13 @@ public class Main {
             }
         });
 
-        thread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
-            @Override
-            public void uncaughtException(Thread t, Throwable e) {
-                System.out.println("A critical error happened in thread " + t.getName() +
-                        " the error is " + e.getMessage());
-            }
-        });
+//        thread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+//            @Override
+//            public void uncaughtException(Thread t, Throwable e) {
+//                System.out.println("A critical error happened in thread " + t.getName() +
+//                        " the error is " + e.getMessage());
+//            }
+//        });
 
         thread.setName("New worker thread");
         thread.setPriority(Thread.MAX_PRIORITY);
